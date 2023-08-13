@@ -14,7 +14,7 @@
 }
 
 .header__menu {
-  max-width: 393px;
+  min-width: 393px;
 }
 
 .header__menu ul {
@@ -216,15 +216,15 @@
   background-repeat: no-repeat;
 }
 
-.lot__item-cinema {
+.lots__item-cinema {
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.lot__item-book {
+.lots__item-book {
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.lot__item-painting {
+.lots__item-painting {
   background-image: url(../images/card-lot-03.jpg);
 }
 
