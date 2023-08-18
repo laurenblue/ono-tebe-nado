@@ -14,10 +14,10 @@
 }
 
 .header__menu {
-  min-width: 393px;
+  max-width: 393px;
 }
 
-.header__menu ul {
+.header__links-container {
   list-style-type: circle;
   display: flex;
   flex-direction: row;
@@ -49,7 +49,7 @@
   object-fit: cover;
 }
 
-.address__contacts {
+.address {
   max-width: 240px;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@
 .overlay__container {
   position: relative;
   width: 100%;
-  min-height: 757px;
+ height: 100%;
 }
 
 .overlay {
@@ -91,6 +91,7 @@
 
 .cover__title {
   margin: auto;
+  position: sticky;
   max-width: 1340px;
   padding-top: 165px;
   display: flex;
@@ -100,7 +101,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 115%;
-  letter-spacing: 30px;
   text-transform: uppercase;
 }
 
@@ -128,16 +128,13 @@
   letter-spacing: normal;
 }
 
-.aligned-text_right_center {
-  letter-spacing: 30px;
-}
-
-.aligned-text_right_end {
-  letter-spacing: 30px;
-  margin-right: -29px;
+.initial-letter-spacing {
+    letter-spacing: 30px;
 }
 
 .cover__description {
+    position: sticky;
+    padding-bottom: 50px;
   display: flex;
   flex-direction: row;
   margin-top: 128px;
@@ -202,7 +199,6 @@
   text-decoration: none;
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .lots__item {
@@ -228,16 +224,8 @@
   background-image: url(../images/card-lot-03.jpg);
 }
 
-.lot__overlay {
-  background: rgba(0, 0, 0, 0.6);
-  width: 430px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .lot__text {
+    position: sticky;
   display: flex;
   width: 100%;
   height: 100%;
@@ -288,8 +276,9 @@
 .about__ellipse {
   background-color: black;
   border-radius: 50%;
-  min-width: 240px;
+  width: 240px;
   height: 240px;
+  flex-shrink: 0;
   margin-left: 95px;
 }
 
@@ -340,8 +329,8 @@
 }
 
 .footer__image {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
 }
 
 .footer__links {
@@ -355,6 +344,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer__link-active {
+    text-decoration: none;
 }
 
 .footer__link-list {
